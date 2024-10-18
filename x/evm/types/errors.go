@@ -128,6 +128,7 @@ type VmError interface {
 	Error() string
 	VmError() string
 	Ret() []byte
+	Reason() string
 }
 
 type vmErrorWithRet struct {
