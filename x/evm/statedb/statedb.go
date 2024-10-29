@@ -547,12 +547,14 @@ func (s *StateDB) SetBalance(addr common.Address, amount *big.Int) {
 func (s *StateDB) SetNonce(addr common.Address, nonce uint64) {
 	stateObject := s.getOrNewStateObject(addr)
 	if stateObject != nil {
-		oldNonce := s.GetNonce(addr)
-		stateObject.SetNonce(nonce)
-
+		// collect nonce changes only if tracer is active to reduce reads to
+		// StateDB
 		if s.evmTracer != nil && s.evmTracer.OnNonceChange != nil {
+			oldNonce := s.GetNonce(addr)
 			s.evmTracer.OnNonceChange(addr, oldNonce, nonce)
 		}
+
+		stateObject.SetNonce(nonce)
 	}
 }
 
@@ -560,17 +562,18 @@ func (s *StateDB) SetNonce(addr common.Address, nonce uint64) {
 func (s *StateDB) SetCode(addr common.Address, code []byte) {
 	stateObject := s.getOrNewStateObject(addr)
 	if stateObject != nil {
-		oldCode := s.GetCode(addr)
-		stateObject.SetCode(crypto.Keccak256Hash(code), code)
-
-		var oldCodeHash common.Hash
-		if oldCode != nil {
-			oldCodeHash = crypto.Keccak256Hash(oldCode)
-		}
-
+		// collect code changes only if tracer is active to reduce reads to
+		// StateDB
 		if s.evmTracer != nil && s.evmTracer.OnCodeChange != nil {
+			oldCode := s.GetCode(addr)
+			var oldCodeHash common.Hash
+			if oldCode != nil {
+				oldCodeHash = crypto.Keccak256Hash(oldCode)
+			}
 			s.evmTracer.OnCodeChange(addr, oldCodeHash, oldCode, crypto.Keccak256Hash(code), code)
 		}
+
+		stateObject.SetCode(crypto.Keccak256Hash(code), code)
 	}
 }
 
