@@ -1,4 +1,4 @@
-module github.com/evmos/ethermint
+module github.com/Helios-Chain-Labs/ethermint
 
 go 1.22.2
 
