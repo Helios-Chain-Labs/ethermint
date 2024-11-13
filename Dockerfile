@@ -1,30 +1,28 @@
-FROM golang:alpine AS build-env
+FROM golang:1.22.4-bookworm AS build-env
 
-# Set up dependencies
-ENV PACKAGES git build-base
+# Installer les dépendances pour la construction
+RUN apt-get update && apt-get install -y build-essential
 
-# Set working directory for the build
+# Configurer le répertoire de travail pour la construction
 WORKDIR /go/src/github.com/Helios-Chain-Labs/ethermint
 
-# Install dependencies
-RUN apk add --update $PACKAGES
-RUN apk add linux-headers
-
-# Add source files
+# Copier les fichiers sources
 COPY . .
 
-# Make the binary
+# Construire le binaire
 RUN make build
 
-# Final image
-FROM alpine:3.17.3
+# Image finale
+FROM debian:bookworm-slim AS stage-1
 
-# Install ca-certificates
-RUN apk add --update ca-certificates jq
+# Installer les certificats et jq
+RUN apt-get update && apt-get install -y ca-certificates jq
+
+# Configurer le répertoire de travail
 WORKDIR /
 
-# Copy over binaries from the build-env
+# Copier le binaire depuis l'étape de construction
 COPY --from=build-env /go/src/github.com/Helios-Chain-Labs/ethermint/build/ethermintd /usr/bin/ethermintd
 
-# Run ethermintd by default
+# Exécuter ethermintd par défaut
 CMD ["ethermintd"]

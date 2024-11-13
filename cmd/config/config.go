@@ -42,7 +42,7 @@ const (
 
 const (
 	// DisplayDenom defines the denomination displayed to users in client applications.
-	DisplayDenom = "inj"
+	DisplayDenom = "helios"
 )
 
 // SetBech32Prefixes sets the global prefixes to be used when serializing addresses and public keys to Bech32 strings.
@@ -64,8 +64,9 @@ func RegisterDenoms() {
 	if err := sdk.RegisterDenom(DisplayDenom, sdkmath.LegacyOneDec()); err != nil {
 		panic(err)
 	}
-
-	if err := sdk.RegisterDenom(types.DefaultEVMDenom, sdkmath.LegacyNewDecWithPrec(1, ethermint.BaseDenomUnit)); err != nil {
-		panic(err)
+	if types.DefaultEVMDenom != DisplayDenom {
+		if err := sdk.RegisterDenom(types.DefaultEVMDenom, sdkmath.LegacyNewDecWithPrec(1, ethermint.BaseDenomUnit)); err != nil {
+			panic(err)
+		}
 	}
 }
