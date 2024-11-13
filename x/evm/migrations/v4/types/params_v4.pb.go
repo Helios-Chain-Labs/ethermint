@@ -10,7 +10,7 @@ import (
 	io "io"
 	math "math"
 	math_bits "math/bits"
-	v0types "github.com/evmos/ethermint/x/evm/migrations/v0/types"
+	v0types "github.com/Helios-Chain-Labs/ethermint/x/evm/migrations/v0/types"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.

@@ -4,7 +4,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	mempool "github.com/cosmos/cosmos-sdk/types/mempool"
 	authante "github.com/cosmos/cosmos-sdk/x/auth/ante"
-	evmtypes "github.com/evmos/ethermint/x/evm/types"
+	evmtypes "github.com/Helios-Chain-Labs/ethermint/x/evm/types"
 )
 
 var _ mempool.SignerExtractionAdapter = EthSignerExtractionAdapter{}

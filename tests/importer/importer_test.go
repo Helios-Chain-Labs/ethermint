@@ -10,8 +10,8 @@ import (
 	"time"
 
 	sdkmath "cosmossdk.io/math"
-	"github.com/evmos/ethermint/app"
-	"github.com/evmos/ethermint/testutil"
+	"github.com/Helios-Chain-Labs/ethermint/app"
+	"github.com/Helios-Chain-Labs/ethermint/testutil"
 	"github.com/holiman/uint256"
 
 	"github.com/stretchr/testify/require"
@@ -19,8 +19,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	evmkeeper "github.com/evmos/ethermint/x/evm/keeper"
-	"github.com/evmos/ethermint/x/evm/statedb"
+	evmkeeper "github.com/Helios-Chain-Labs/ethermint/x/evm/keeper"
+	"github.com/Helios-Chain-Labs/ethermint/x/evm/statedb"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/consensus/ethash"
@@ -37,7 +37,7 @@ import (
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	tmversion "github.com/cometbft/cometbft/proto/tendermint/version"
 	"github.com/cometbft/cometbft/version"
-	"github.com/evmos/ethermint/crypto/ethsecp256k1"
+	"github.com/Helios-Chain-Labs/ethermint/crypto/ethsecp256k1"
 )
 
 var (

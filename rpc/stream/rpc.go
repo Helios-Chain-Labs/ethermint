@@ -13,8 +13,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
-	"github.com/evmos/ethermint/rpc/types"
-	evmtypes "github.com/evmos/ethermint/x/evm/types"
+	"github.com/Helios-Chain-Labs/ethermint/rpc/types"
+	evmtypes "github.com/Helios-Chain-Labs/ethermint/x/evm/types"
 )
 
 const (

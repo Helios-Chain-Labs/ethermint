@@ -1,7 +1,7 @@
 package keeper_test
 
 import (
-	srvflags "github.com/evmos/ethermint/server/flags"
+	srvflags "github.com/Helios-Chain-Labs/ethermint/server/flags"
 	"math/big"
 	"testing"
 
@@ -14,12 +14,12 @@ import (
 	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
-	"github.com/evmos/ethermint/app"
-	"github.com/evmos/ethermint/tests"
-	"github.com/evmos/ethermint/testutil"
+	"github.com/Helios-Chain-Labs/ethermint/app"
+	"github.com/Helios-Chain-Labs/ethermint/tests"
+	"github.com/Helios-Chain-Labs/ethermint/testutil"
 
-	evmtypes "github.com/evmos/ethermint/x/evm/types"
-	feemarkettypes "github.com/evmos/ethermint/x/feemarket/types"
+	evmtypes "github.com/Helios-Chain-Labs/ethermint/x/evm/types"
+	feemarkettypes "github.com/Helios-Chain-Labs/ethermint/x/feemarket/types"
 )
 
 var s *IntegrationTestSuite

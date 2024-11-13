@@ -22,7 +22,7 @@ import (
 	"time"
 
 	"github.com/ethereum/go-ethereum/eth/tracers"
-	cosmostracing "github.com/evmos/ethermint/x/evm/tracing"
+	cosmostracing "github.com/Helios-Chain-Labs/ethermint/x/evm/tracing"
 
 	cosmostypes "github.com/cometbft/cometbft/types"
 	"github.com/ethereum/go-ethereum/common"
@@ -39,7 +39,7 @@ import (
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/timestamppb"
 
-	pbeth "github.com/evmos/ethermint/pb/sf/ethereum/type/v2"
+	pbeth "github.com/Helios-Chain-Labs/ethermint/pb/sf/ethereum/type/v2"
 )
 
 const (

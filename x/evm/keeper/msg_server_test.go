@@ -10,10 +10,10 @@ import (
 	"github.com/stretchr/testify/suite"
 
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
-	"github.com/evmos/ethermint/testutil"
-	utiltx "github.com/evmos/ethermint/testutil/tx"
-	"github.com/evmos/ethermint/x/evm/statedb"
-	"github.com/evmos/ethermint/x/evm/types"
+	"github.com/Helios-Chain-Labs/ethermint/testutil"
+	utiltx "github.com/Helios-Chain-Labs/ethermint/testutil/tx"
+	"github.com/Helios-Chain-Labs/ethermint/x/evm/statedb"
+	"github.com/Helios-Chain-Labs/ethermint/x/evm/types"
 )
 
 type MsgServerTestSuite struct {

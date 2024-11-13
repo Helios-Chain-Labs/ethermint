@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/evmos/ethermint/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/Helios-Chain-Labs/ethermint/blob/main/LICENSE
 package statedb
 
 import (
@@ -20,7 +20,7 @@ import (
 	"math/big"
 	"sort"
 
-	cosmostracing "github.com/evmos/ethermint/x/evm/tracing"
+	cosmostracing "github.com/Helios-Chain-Labs/ethermint/x/evm/tracing"
 
 	errorsmod "cosmossdk.io/errors"
 	sdkmath "cosmossdk.io/math"
@@ -34,7 +34,7 @@ import (
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/ethereum/go-ethereum/params"
 	"github.com/ethereum/go-ethereum/trie/utils"
-	"github.com/evmos/ethermint/x/evm/types"
+	"github.com/Helios-Chain-Labs/ethermint/x/evm/types"
 	"github.com/holiman/uint256"
 )
 

@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/evmos/ethermint/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/Helios-Chain-Labs/ethermint/blob/main/LICENSE
 package keeper
 
 import (
@@ -23,7 +23,7 @@ import (
 	"math/big"
 	"time"
 
-	cosmostracing "github.com/evmos/ethermint/x/evm/tracing"
+	cosmostracing "github.com/Helios-Chain-Labs/ethermint/x/evm/tracing"
 
 	"github.com/ethereum/go-ethereum/eth/tracers"
 	"github.com/ethereum/go-ethereum/eth/tracers/logger"
@@ -41,9 +41,9 @@ import (
 	"github.com/ethereum/go-ethereum/core/vm"
 	ethparams "github.com/ethereum/go-ethereum/params"
 
-	rpctypes "github.com/evmos/ethermint/rpc/types"
-	ethermint "github.com/evmos/ethermint/types"
-	"github.com/evmos/ethermint/x/evm/types"
+	rpctypes "github.com/Helios-Chain-Labs/ethermint/rpc/types"
+	ethermint "github.com/Helios-Chain-Labs/ethermint/types"
+	"github.com/Helios-Chain-Labs/ethermint/x/evm/types"
 )
 
 var _ types.QueryServer = Keeper{}

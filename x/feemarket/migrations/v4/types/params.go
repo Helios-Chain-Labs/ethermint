@@ -3,7 +3,7 @@ package types
 import (
 	"fmt"
 
-	"github.com/evmos/ethermint/x/feemarket/types"
+	"github.com/Helios-Chain-Labs/ethermint/x/feemarket/types"
 
 	sdkmath "cosmossdk.io/math"
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"

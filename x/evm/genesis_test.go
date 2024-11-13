@@ -8,12 +8,12 @@ import (
 	"github.com/holiman/uint256"
 
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/evmos/ethermint/crypto/ethsecp256k1"
-	"github.com/evmos/ethermint/testutil"
-	ethermint "github.com/evmos/ethermint/types"
-	"github.com/evmos/ethermint/x/evm"
-	"github.com/evmos/ethermint/x/evm/statedb"
-	"github.com/evmos/ethermint/x/evm/types"
+	"github.com/Helios-Chain-Labs/ethermint/crypto/ethsecp256k1"
+	"github.com/Helios-Chain-Labs/ethermint/testutil"
+	ethermint "github.com/Helios-Chain-Labs/ethermint/types"
+	"github.com/Helios-Chain-Labs/ethermint/x/evm"
+	"github.com/Helios-Chain-Labs/ethermint/x/evm/statedb"
+	"github.com/Helios-Chain-Labs/ethermint/x/evm/types"
 	"github.com/stretchr/testify/suite"
 )
 

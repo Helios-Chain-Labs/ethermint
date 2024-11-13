@@ -9,10 +9,10 @@ import (
 	govclient "github.com/cosmos/cosmos-sdk/x/gov/client"
 	paramsclient "github.com/cosmos/cosmos-sdk/x/params/client"
 	"github.com/cosmos/cosmos-sdk/x/staking"
-	"github.com/evmos/ethermint/encoding"
-	"github.com/evmos/ethermint/types"
-	"github.com/evmos/ethermint/x/evm"
-	"github.com/evmos/ethermint/x/feemarket"
+	"github.com/Helios-Chain-Labs/ethermint/encoding"
+	"github.com/Helios-Chain-Labs/ethermint/types"
+	"github.com/Helios-Chain-Labs/ethermint/x/evm"
+	"github.com/Helios-Chain-Labs/ethermint/x/feemarket"
 )
 
 func MakeConfigForTest(moduleManager module.BasicManager) types.EncodingConfig {

@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/evmos/ethermint/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/Helios-Chain-Labs/ethermint/blob/main/LICENSE
 package app
 
 import (
@@ -125,22 +125,22 @@ import (
 	ibcexported "github.com/cosmos/ibc-go/v8/modules/core/exported"
 	ibckeeper "github.com/cosmos/ibc-go/v8/modules/core/keeper"
 	ibctm "github.com/cosmos/ibc-go/v8/modules/light-clients/07-tendermint"
-	"github.com/evmos/ethermint/client/docs"
+	"github.com/Helios-Chain-Labs/ethermint/client/docs"
 
-	"github.com/evmos/ethermint/app/ante"
-	"github.com/evmos/ethermint/encoding"
-	"github.com/evmos/ethermint/ethereum/eip712"
-	srvconfig "github.com/evmos/ethermint/server/config"
-	srvflags "github.com/evmos/ethermint/server/flags"
-	ethermint "github.com/evmos/ethermint/types"
-	"github.com/evmos/ethermint/x/evm"
-	evmkeeper "github.com/evmos/ethermint/x/evm/keeper"
-	v0evmtypes "github.com/evmos/ethermint/x/evm/migrations/v0/types"
-	evmtracing "github.com/evmos/ethermint/x/evm/tracing"
-	evmtypes "github.com/evmos/ethermint/x/evm/types"
-	"github.com/evmos/ethermint/x/feemarket"
-	feemarketkeeper "github.com/evmos/ethermint/x/feemarket/keeper"
-	feemarkettypes "github.com/evmos/ethermint/x/feemarket/types"
+	"github.com/Helios-Chain-Labs/ethermint/app/ante"
+	"github.com/Helios-Chain-Labs/ethermint/encoding"
+	"github.com/Helios-Chain-Labs/ethermint/ethereum/eip712"
+	srvconfig "github.com/Helios-Chain-Labs/ethermint/server/config"
+	srvflags "github.com/Helios-Chain-Labs/ethermint/server/flags"
+	ethermint "github.com/Helios-Chain-Labs/ethermint/types"
+	"github.com/Helios-Chain-Labs/ethermint/x/evm"
+	evmkeeper "github.com/Helios-Chain-Labs/ethermint/x/evm/keeper"
+	v0evmtypes "github.com/Helios-Chain-Labs/ethermint/x/evm/migrations/v0/types"
+	evmtracing "github.com/Helios-Chain-Labs/ethermint/x/evm/tracing"
+	evmtypes "github.com/Helios-Chain-Labs/ethermint/x/evm/types"
+	"github.com/Helios-Chain-Labs/ethermint/x/feemarket"
+	feemarketkeeper "github.com/Helios-Chain-Labs/ethermint/x/feemarket/keeper"
+	feemarkettypes "github.com/Helios-Chain-Labs/ethermint/x/feemarket/types"
 
 	consensusparamkeeper "github.com/cosmos/cosmos-sdk/x/consensus/keeper"
 	consensusparamtypes "github.com/cosmos/cosmos-sdk/x/consensus/types"

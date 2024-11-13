@@ -4,8 +4,8 @@ import (
 	fmt "fmt"
 
 	"github.com/ethereum/go-ethereum/core/vm"
-	v0types "github.com/evmos/ethermint/x/evm/migrations/v0/types"
-	currenttypes "github.com/evmos/ethermint/x/evm/types"
+	v0types "github.com/Helios-Chain-Labs/ethermint/x/evm/migrations/v0/types"
+	currenttypes "github.com/Helios-Chain-Labs/ethermint/x/evm/types"
 )
 
 func (p V4Params) ToParams() currenttypes.Params {

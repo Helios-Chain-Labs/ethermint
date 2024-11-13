@@ -15,11 +15,11 @@ import (
 	signingv1beta1 "cosmossdk.io/api/cosmos/tx/signing/v1beta1"
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
-	"github.com/evmos/ethermint/app"
-	"github.com/evmos/ethermint/ethereum/eip712"
-	"github.com/evmos/ethermint/testutil"
-	"github.com/evmos/ethermint/testutil/config"
-	utiltx "github.com/evmos/ethermint/testutil/tx"
+	"github.com/Helios-Chain-Labs/ethermint/app"
+	"github.com/Helios-Chain-Labs/ethermint/ethereum/eip712"
+	"github.com/Helios-Chain-Labs/ethermint/testutil"
+	"github.com/Helios-Chain-Labs/ethermint/testutil/config"
+	utiltx "github.com/Helios-Chain-Labs/ethermint/testutil/tx"
 
 	"github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
@@ -39,7 +39,7 @@ import (
 	authtx "github.com/cosmos/cosmos-sdk/x/auth/tx"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 	authz "github.com/cosmos/cosmos-sdk/x/authz"
-	"github.com/evmos/ethermint/crypto/ethsecp256k1"
+	"github.com/Helios-Chain-Labs/ethermint/crypto/ethsecp256k1"
 
 	evtypes "cosmossdk.io/x/evidence/types"
 	"cosmossdk.io/x/feegrant"
@@ -48,11 +48,11 @@ import (
 	vestingtypes "github.com/cosmos/cosmos-sdk/x/auth/vesting/types"
 	govtypesv1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
-	ante "github.com/evmos/ethermint/app/ante"
-	"github.com/evmos/ethermint/tests"
-	"github.com/evmos/ethermint/x/evm/statedb"
-	evmtypes "github.com/evmos/ethermint/x/evm/types"
-	feemarkettypes "github.com/evmos/ethermint/x/feemarket/types"
+	ante "github.com/Helios-Chain-Labs/ethermint/app/ante"
+	"github.com/Helios-Chain-Labs/ethermint/tests"
+	"github.com/Helios-Chain-Labs/ethermint/x/evm/statedb"
+	evmtypes "github.com/Helios-Chain-Labs/ethermint/x/evm/types"
+	feemarkettypes "github.com/Helios-Chain-Labs/ethermint/x/feemarket/types"
 )
 
 type AnteTestSuite struct {

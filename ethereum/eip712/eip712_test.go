@@ -14,7 +14,7 @@ import (
 
 	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/evmos/ethermint/crypto/ethsecp256k1"
+	"github.com/Helios-Chain-Labs/ethermint/crypto/ethsecp256k1"
 
 	txtypes "github.com/cosmos/cosmos-sdk/types/tx"
 	"github.com/cosmos/cosmos-sdk/types/tx/signing"
@@ -24,12 +24,12 @@ import (
 	govtypesv1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
-	"github.com/evmos/ethermint/cmd/config"
-	"github.com/evmos/ethermint/ethereum/eip712"
-	"github.com/evmos/ethermint/testutil"
-	testutilconfig "github.com/evmos/ethermint/testutil/config"
-	ethermint "github.com/evmos/ethermint/types"
-	evmtypes "github.com/evmos/ethermint/x/evm/types"
+	"github.com/Helios-Chain-Labs/ethermint/cmd/config"
+	"github.com/Helios-Chain-Labs/ethermint/ethereum/eip712"
+	"github.com/Helios-Chain-Labs/ethermint/testutil"
+	testutilconfig "github.com/Helios-Chain-Labs/ethermint/testutil/config"
+	ethermint "github.com/Helios-Chain-Labs/ethermint/types"
+	evmtypes "github.com/Helios-Chain-Labs/ethermint/x/evm/types"
 	"github.com/stretchr/testify/suite"
 )
 

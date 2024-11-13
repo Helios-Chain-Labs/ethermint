@@ -14,10 +14,10 @@ import (
 	"github.com/ethereum/go-ethereum/core"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/params"
-	"github.com/evmos/ethermint/app"
-	"github.com/evmos/ethermint/testutil"
-	evmtypes "github.com/evmos/ethermint/x/evm/types"
-	feemarkettypes "github.com/evmos/ethermint/x/feemarket/types"
+	"github.com/Helios-Chain-Labs/ethermint/app"
+	"github.com/Helios-Chain-Labs/ethermint/testutil"
+	evmtypes "github.com/Helios-Chain-Labs/ethermint/x/evm/types"
+	feemarkettypes "github.com/Helios-Chain-Labs/ethermint/x/feemarket/types"
 	"github.com/stretchr/testify/require"
 )
 

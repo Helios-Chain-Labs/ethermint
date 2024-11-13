@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/evmos/ethermint/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/Helios-Chain-Labs/ethermint/blob/main/LICENSE
 package main
 
 import (
@@ -50,15 +50,15 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/crisis"
 	genutilcli "github.com/cosmos/cosmos-sdk/x/genutil/client/cli"
 	rosettaCmd "github.com/cosmos/rosetta/cmd"
-	"github.com/evmos/ethermint/app"
-	ethermintclient "github.com/evmos/ethermint/client"
-	"github.com/evmos/ethermint/crypto/hd"
-	"github.com/evmos/ethermint/ethereum/eip712"
-	"github.com/evmos/ethermint/server"
-	servercfg "github.com/evmos/ethermint/server/config"
-	srvflags "github.com/evmos/ethermint/server/flags"
-	ethermint "github.com/evmos/ethermint/types"
-	evmtypes "github.com/evmos/ethermint/x/evm/types"
+	"github.com/Helios-Chain-Labs/ethermint/app"
+	ethermintclient "github.com/Helios-Chain-Labs/ethermint/client"
+	"github.com/Helios-Chain-Labs/ethermint/crypto/hd"
+	"github.com/Helios-Chain-Labs/ethermint/ethereum/eip712"
+	"github.com/Helios-Chain-Labs/ethermint/server"
+	servercfg "github.com/Helios-Chain-Labs/ethermint/server/config"
+	srvflags "github.com/Helios-Chain-Labs/ethermint/server/flags"
+	ethermint "github.com/Helios-Chain-Labs/ethermint/types"
+	evmtypes "github.com/Helios-Chain-Labs/ethermint/x/evm/types"
 )
 
 const (

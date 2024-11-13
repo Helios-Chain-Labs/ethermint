@@ -12,14 +12,14 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/evmos/ethermint/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/Helios-Chain-Labs/ethermint/blob/main/LICENSE
 package types
 
 import (
 	"fmt"
 
 	"github.com/ethereum/go-ethereum/core/vm"
-	currenttypes "github.com/evmos/ethermint/x/evm/types"
+	currenttypes "github.com/Helios-Chain-Labs/ethermint/x/evm/types"
 )
 
 func (p V0Params) ToParams() currenttypes.Params {

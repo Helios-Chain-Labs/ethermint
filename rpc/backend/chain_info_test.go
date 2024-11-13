@@ -7,8 +7,8 @@ import (
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	"github.com/ethereum/go-ethereum/common/math"
 	ethrpc "github.com/ethereum/go-ethereum/rpc"
-	rpc "github.com/evmos/ethermint/rpc/types"
-	"github.com/evmos/ethermint/tests"
+	rpc "github.com/Helios-Chain-Labs/ethermint/rpc/types"
+	"github.com/Helios-Chain-Labs/ethermint/tests"
 	"google.golang.org/grpc/metadata"
 
 	"github.com/cometbft/cometbft/abci/types"
@@ -16,9 +16,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
 	sdkmath "cosmossdk.io/math"
-	"github.com/evmos/ethermint/rpc/backend/mocks"
-	evmtypes "github.com/evmos/ethermint/x/evm/types"
-	feemarkettypes "github.com/evmos/ethermint/x/feemarket/types"
+	"github.com/Helios-Chain-Labs/ethermint/rpc/backend/mocks"
+	evmtypes "github.com/Helios-Chain-Labs/ethermint/x/evm/types"
+	feemarkettypes "github.com/Helios-Chain-Labs/ethermint/x/feemarket/types"
 )
 
 func (suite *BackendTestSuite) TestBaseFee() {

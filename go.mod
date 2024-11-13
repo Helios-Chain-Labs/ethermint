@@ -271,11 +271,15 @@ require (
 
 replace (
 	cosmossdk.io/client/v2 => github.com/InjectiveLabs/cosmos-sdk/client/v2 v2.0.0-20240904140803-b4127ecb5410
+
+	cosmossdk.io/simapp => cosmossdk.io/simapp v0.0.0-20241112091912-96a1c1c833ea
 	cosmossdk.io/store => github.com/InjectiveLabs/cosmos-sdk/store v0.0.0-20240904140803-b4127ecb5410
 	cosmossdk.io/x/tx => github.com/InjectiveLabs/cosmos-sdk/x/tx v0.0.0-20240904140803-b4127ecb5410
 
 	github.com/cometbft/cometbft => github.com/Injectivelabs/cometbft v0.38.11-inj-5
 	github.com/cosmos/cosmos-sdk => github.com/InjectiveLabs/cosmos-sdk v0.50.10-0.20241014111010-224eb95c9eb1
 	github.com/ethereum/go-ethereum => github.com/InjectiveLabs/go-ethereum v1.9.22-0.20240923100242-5e28e23d353e
+
+	github.com/gogo/protobuf => github.com/gogo/protobuf v1.3.2
 	nhooyr.io/websocket => github.com/coder/websocket v1.8.10 // replaced as instructed here:https://coder.com/blog/websocket
 )

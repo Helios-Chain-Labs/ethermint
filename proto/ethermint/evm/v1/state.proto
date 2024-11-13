@@ -1,7 +1,7 @@
 syntax = "proto3";
 package ethermint.evm.v1;
 
-option go_package = "github.com/evmos/ethermint/x/evm/types";
+option go_package = "github.com/Helios-Chain-Labs/ethermint/x/evm/types";
 
 // State represents a single Storage key value pair item.
 message State {

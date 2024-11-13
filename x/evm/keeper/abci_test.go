@@ -3,8 +3,8 @@ package keeper_test
 import (
 	"testing"
 
-	"github.com/evmos/ethermint/testutil"
-	evmtypes "github.com/evmos/ethermint/x/evm/types"
+	"github.com/Helios-Chain-Labs/ethermint/testutil"
+	evmtypes "github.com/Helios-Chain-Labs/ethermint/x/evm/types"
 	"github.com/stretchr/testify/suite"
 )
 

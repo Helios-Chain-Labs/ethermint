@@ -4,8 +4,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/evmos/ethermint/app"
-	"github.com/evmos/ethermint/testutil"
+	"github.com/Helios-Chain-Labs/ethermint/app"
+	"github.com/Helios-Chain-Labs/ethermint/testutil"
 	"github.com/stretchr/testify/require"
 
 	"cosmossdk.io/log"

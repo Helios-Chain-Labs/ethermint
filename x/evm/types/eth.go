@@ -6,7 +6,7 @@ import (
 	errorsmod "cosmossdk.io/errors"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
-	"github.com/evmos/ethermint/types"
+	"github.com/Helios-Chain-Labs/ethermint/types"
 )
 
 type EthereumTx struct {

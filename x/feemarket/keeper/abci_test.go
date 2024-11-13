@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	storetypes "cosmossdk.io/store/types"
-	"github.com/evmos/ethermint/testutil"
+	"github.com/Helios-Chain-Labs/ethermint/testutil"
 	"github.com/stretchr/testify/suite"
 )
 

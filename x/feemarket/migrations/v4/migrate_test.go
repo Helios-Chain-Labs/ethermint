@@ -6,9 +6,9 @@ import (
 	storetypes "cosmossdk.io/store/types"
 	"github.com/cosmos/cosmos-sdk/testutil"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/evmos/ethermint/encoding"
-	v4 "github.com/evmos/ethermint/x/feemarket/migrations/v4"
-	"github.com/evmos/ethermint/x/feemarket/types"
+	"github.com/Helios-Chain-Labs/ethermint/encoding"
+	v4 "github.com/Helios-Chain-Labs/ethermint/x/feemarket/migrations/v4"
+	"github.com/Helios-Chain-Labs/ethermint/x/feemarket/types"
 	"github.com/stretchr/testify/require"
 )
 

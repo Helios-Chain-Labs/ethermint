@@ -5,8 +5,8 @@ import (
 
 	sdkmath "cosmossdk.io/math"
 	ethparams "github.com/ethereum/go-ethereum/params"
-	"github.com/evmos/ethermint/testutil"
-	"github.com/evmos/ethermint/x/feemarket/types"
+	"github.com/Helios-Chain-Labs/ethermint/testutil"
+	"github.com/Helios-Chain-Labs/ethermint/x/feemarket/types"
 	"github.com/stretchr/testify/suite"
 )
 

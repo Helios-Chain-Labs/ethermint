@@ -39,9 +39,9 @@ import (
 	capabilitytypes "github.com/cosmos/ibc-go/modules/capability/types"
 	ibctransfertypes "github.com/cosmos/ibc-go/v8/modules/apps/transfer/types"
 	ibcexported "github.com/cosmos/ibc-go/v8/modules/core/exported"
-	"github.com/evmos/ethermint/app"
-	"github.com/evmos/ethermint/app/ante"
-	"github.com/evmos/ethermint/testutil"
+	"github.com/Helios-Chain-Labs/ethermint/app"
+	"github.com/Helios-Chain-Labs/ethermint/app/ante"
+	"github.com/Helios-Chain-Labs/ethermint/testutil"
 )
 
 func init() {

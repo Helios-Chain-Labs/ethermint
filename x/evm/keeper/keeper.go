@@ -12,13 +12,13 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/evmos/ethermint/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/Helios-Chain-Labs/ethermint/blob/main/LICENSE
 package keeper
 
 import (
 	"math/big"
 
-	cosmostracing "github.com/evmos/ethermint/x/evm/tracing"
+	cosmostracing "github.com/Helios-Chain-Labs/ethermint/x/evm/tracing"
 
 	errorsmod "cosmossdk.io/errors"
 	"cosmossdk.io/log"
@@ -31,9 +31,9 @@ import (
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/core/vm"
 	"github.com/ethereum/go-ethereum/params"
-	ethermint "github.com/evmos/ethermint/types"
-	"github.com/evmos/ethermint/x/evm/statedb"
-	"github.com/evmos/ethermint/x/evm/types"
+	ethermint "github.com/Helios-Chain-Labs/ethermint/types"
+	"github.com/Helios-Chain-Labs/ethermint/x/evm/statedb"
+	"github.com/Helios-Chain-Labs/ethermint/x/evm/types"
 )
 
 // CustomContractFn defines a custom precompiled contract generator with ctx, rules and returns a precompiled contract.

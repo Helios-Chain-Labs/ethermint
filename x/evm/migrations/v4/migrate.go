@@ -5,9 +5,9 @@ import (
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	v0types "github.com/evmos/ethermint/x/evm/migrations/v0/types"
-	v4types "github.com/evmos/ethermint/x/evm/migrations/v4/types"
-	"github.com/evmos/ethermint/x/evm/types"
+	v0types "github.com/Helios-Chain-Labs/ethermint/x/evm/migrations/v0/types"
+	v4types "github.com/Helios-Chain-Labs/ethermint/x/evm/migrations/v4/types"
+	"github.com/Helios-Chain-Labs/ethermint/x/evm/types"
 )
 
 // MigrateStore migrates the x/evm module state from the consensus version 3 to

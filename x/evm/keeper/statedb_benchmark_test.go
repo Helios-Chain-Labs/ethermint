@@ -12,8 +12,8 @@ import (
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/crypto"
 
-	"github.com/evmos/ethermint/tests"
-	"github.com/evmos/ethermint/testutil"
+	"github.com/Helios-Chain-Labs/ethermint/tests"
+	"github.com/Helios-Chain-Labs/ethermint/testutil"
 )
 
 type StatedbBenchmarkTestSuite struct {

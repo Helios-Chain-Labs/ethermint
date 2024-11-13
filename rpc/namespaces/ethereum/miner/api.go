@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/evmos/ethermint/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/Helios-Chain-Labs/ethermint/blob/main/LICENSE
 package miner
 
 import (
@@ -23,7 +23,7 @@ import (
 
 	"cosmossdk.io/log"
 
-	"github.com/evmos/ethermint/rpc/backend"
+	"github.com/Helios-Chain-Labs/ethermint/rpc/backend"
 )
 
 // API is the private miner prefixed set of APIs in the Miner JSON-RPC spec.

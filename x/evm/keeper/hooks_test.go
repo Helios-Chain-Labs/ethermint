@@ -11,10 +11,10 @@ import (
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/evmos/ethermint/testutil"
-	"github.com/evmos/ethermint/x/evm/keeper"
-	"github.com/evmos/ethermint/x/evm/statedb"
-	"github.com/evmos/ethermint/x/evm/types"
+	"github.com/Helios-Chain-Labs/ethermint/testutil"
+	"github.com/Helios-Chain-Labs/ethermint/x/evm/keeper"
+	"github.com/Helios-Chain-Labs/ethermint/x/evm/statedb"
+	"github.com/Helios-Chain-Labs/ethermint/x/evm/types"
 )
 
 type HookTestSuite struct {

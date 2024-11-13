@@ -10,10 +10,10 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	authtx "github.com/cosmos/cosmos-sdk/x/auth/tx"
 	proto "github.com/cosmos/gogoproto/proto"
-	"github.com/evmos/ethermint/encoding"
-	evmtypes "github.com/evmos/ethermint/x/evm/types"
+	"github.com/Helios-Chain-Labs/ethermint/encoding"
+	evmtypes "github.com/Helios-Chain-Labs/ethermint/x/evm/types"
 
-	"github.com/evmos/ethermint/tests"
+	"github.com/Helios-Chain-Labs/ethermint/tests"
 
 	"github.com/stretchr/testify/require"
 

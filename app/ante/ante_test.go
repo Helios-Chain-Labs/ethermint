@@ -27,11 +27,11 @@ import (
 
 	"github.com/ethereum/go-ethereum/core/types"
 	ethparams "github.com/ethereum/go-ethereum/params"
-	"github.com/evmos/ethermint/app/ante"
-	"github.com/evmos/ethermint/crypto/ethsecp256k1"
-	"github.com/evmos/ethermint/tests"
-	"github.com/evmos/ethermint/testutil"
-	evmtypes "github.com/evmos/ethermint/x/evm/types"
+	"github.com/Helios-Chain-Labs/ethermint/app/ante"
+	"github.com/Helios-Chain-Labs/ethermint/crypto/ethsecp256k1"
+	"github.com/Helios-Chain-Labs/ethermint/tests"
+	"github.com/Helios-Chain-Labs/ethermint/testutil"
+	evmtypes "github.com/Helios-Chain-Labs/ethermint/x/evm/types"
 
 	amino "github.com/cosmos/cosmos-sdk/codec"
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"

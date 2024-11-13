@@ -5,8 +5,8 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/evmos/ethermint/testutil"
-	"github.com/evmos/ethermint/x/evm/keeper"
+	"github.com/Helios-Chain-Labs/ethermint/testutil"
+	"github.com/Helios-Chain-Labs/ethermint/x/evm/keeper"
 
 	sdkmath "cosmossdk.io/math"
 	storetypes "cosmossdk.io/store/types"
@@ -24,9 +24,9 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/evmos/ethermint/app"
-	ethermint "github.com/evmos/ethermint/types"
-	"github.com/evmos/ethermint/x/evm/types"
+	"github.com/Helios-Chain-Labs/ethermint/app"
+	ethermint "github.com/Helios-Chain-Labs/ethermint/types"
+	"github.com/Helios-Chain-Labs/ethermint/x/evm/types"
 )
 
 type HandlerTestSuite struct {

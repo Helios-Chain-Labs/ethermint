@@ -4,9 +4,9 @@ import (
 	"testing"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/evmos/ethermint/testutil"
-	feemarketkeeper "github.com/evmos/ethermint/x/feemarket/keeper"
-	"github.com/evmos/ethermint/x/feemarket/types"
+	"github.com/Helios-Chain-Labs/ethermint/testutil"
+	feemarketkeeper "github.com/Helios-Chain-Labs/ethermint/x/feemarket/keeper"
+	"github.com/Helios-Chain-Labs/ethermint/x/feemarket/types"
 	"github.com/stretchr/testify/suite"
 )
 

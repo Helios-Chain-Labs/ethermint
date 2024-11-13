@@ -6,7 +6,7 @@ import (
 
 	sdkmath "cosmossdk.io/math"
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
-	"github.com/evmos/ethermint/testutil"
+	"github.com/Helios-Chain-Labs/ethermint/testutil"
 	"github.com/stretchr/testify/suite"
 )
 

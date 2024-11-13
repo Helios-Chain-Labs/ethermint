@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/evmos/ethermint/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/Helios-Chain-Labs/ethermint/blob/main/LICENSE
 package server
 
 import (
@@ -64,11 +64,11 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	genutiltypes "github.com/cosmos/cosmos-sdk/x/genutil/types"
 
-	"github.com/evmos/ethermint/indexer"
-	ethdebug "github.com/evmos/ethermint/rpc/namespaces/ethereum/debug"
-	"github.com/evmos/ethermint/server/config"
-	srvflags "github.com/evmos/ethermint/server/flags"
-	ethermint "github.com/evmos/ethermint/types"
+	"github.com/Helios-Chain-Labs/ethermint/indexer"
+	ethdebug "github.com/Helios-Chain-Labs/ethermint/rpc/namespaces/ethereum/debug"
+	"github.com/Helios-Chain-Labs/ethermint/server/config"
+	srvflags "github.com/Helios-Chain-Labs/ethermint/server/flags"
+	ethermint "github.com/Helios-Chain-Labs/ethermint/types"
 )
 
 // DBOpener is a function to open `application.db`, potentially with customized options.

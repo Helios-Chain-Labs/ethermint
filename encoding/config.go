@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/evmos/ethermint/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/Helios-Chain-Labs/ethermint/blob/main/LICENSE
 package encoding
 
 import (
@@ -24,8 +24,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/auth/migrations/legacytx"
 	"github.com/cosmos/cosmos-sdk/x/auth/tx"
 	gogoproto "github.com/cosmos/gogoproto/proto"
-	enccodec "github.com/evmos/ethermint/encoding/codec"
-	ethermint "github.com/evmos/ethermint/types"
+	enccodec "github.com/Helios-Chain-Labs/ethermint/encoding/codec"
+	ethermint "github.com/Helios-Chain-Labs/ethermint/types"
 )
 
 // MakeConfig creates an EncodingConfig

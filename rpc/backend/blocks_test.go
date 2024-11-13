@@ -14,10 +14,10 @@ import (
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	"google.golang.org/grpc/metadata"
 
-	"github.com/evmos/ethermint/rpc/backend/mocks"
-	ethrpc "github.com/evmos/ethermint/rpc/types"
-	"github.com/evmos/ethermint/tests"
-	evmtypes "github.com/evmos/ethermint/x/evm/types"
+	"github.com/Helios-Chain-Labs/ethermint/rpc/backend/mocks"
+	ethrpc "github.com/Helios-Chain-Labs/ethermint/rpc/types"
+	"github.com/Helios-Chain-Labs/ethermint/tests"
+	evmtypes "github.com/Helios-Chain-Labs/ethermint/x/evm/types"
 )
 
 func (suite *BackendTestSuite) TestBlockNumber() {

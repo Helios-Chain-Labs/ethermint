@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/evmos/ethermint/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/Helios-Chain-Labs/ethermint/blob/main/LICENSE
 package rpc
 
 import (
@@ -23,17 +23,17 @@ import (
 
 	"github.com/ethereum/go-ethereum/rpc"
 
-	"github.com/evmos/ethermint/rpc/backend"
-	"github.com/evmos/ethermint/rpc/namespaces/ethereum/debug"
-	"github.com/evmos/ethermint/rpc/namespaces/ethereum/eth"
-	"github.com/evmos/ethermint/rpc/namespaces/ethereum/eth/filters"
-	"github.com/evmos/ethermint/rpc/namespaces/ethereum/miner"
-	"github.com/evmos/ethermint/rpc/namespaces/ethereum/net"
-	"github.com/evmos/ethermint/rpc/namespaces/ethereum/personal"
-	"github.com/evmos/ethermint/rpc/namespaces/ethereum/txpool"
-	"github.com/evmos/ethermint/rpc/namespaces/ethereum/web3"
-	"github.com/evmos/ethermint/rpc/stream"
-	ethermint "github.com/evmos/ethermint/types"
+	"github.com/Helios-Chain-Labs/ethermint/rpc/backend"
+	"github.com/Helios-Chain-Labs/ethermint/rpc/namespaces/ethereum/debug"
+	"github.com/Helios-Chain-Labs/ethermint/rpc/namespaces/ethereum/eth"
+	"github.com/Helios-Chain-Labs/ethermint/rpc/namespaces/ethereum/eth/filters"
+	"github.com/Helios-Chain-Labs/ethermint/rpc/namespaces/ethereum/miner"
+	"github.com/Helios-Chain-Labs/ethermint/rpc/namespaces/ethereum/net"
+	"github.com/Helios-Chain-Labs/ethermint/rpc/namespaces/ethereum/personal"
+	"github.com/Helios-Chain-Labs/ethermint/rpc/namespaces/ethereum/txpool"
+	"github.com/Helios-Chain-Labs/ethermint/rpc/namespaces/ethereum/web3"
+	"github.com/Helios-Chain-Labs/ethermint/rpc/stream"
+	ethermint "github.com/Helios-Chain-Labs/ethermint/types"
 )
 
 // RPC namespaces and API version

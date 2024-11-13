@@ -7,7 +7,7 @@ import (
 
 	sdkmath "cosmossdk.io/math"
 	stakingkeeper "github.com/cosmos/cosmos-sdk/x/staking/keeper"
-	"github.com/evmos/ethermint/testutil"
+	"github.com/Helios-Chain-Labs/ethermint/testutil"
 	"github.com/stretchr/testify/suite"
 )
 

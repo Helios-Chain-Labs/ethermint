@@ -5,7 +5,7 @@ import (
 
 	"cosmossdk.io/store/prefix"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/evmos/ethermint/x/evm/types"
+	"github.com/Helios-Chain-Labs/ethermint/x/evm/types"
 )
 
 func (k Keeper) SetTxBloom(ctx sdk.Context, bloom *big.Int) {
