@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 KEY="mykey"
 CHAINID="ethermint-9000"
 MONIKER="localtestnet"
