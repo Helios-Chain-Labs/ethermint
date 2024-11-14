@@ -272,7 +272,7 @@ require (
 replace (
 	cosmossdk.io/client/v2 => github.com/InjectiveLabs/cosmos-sdk/client/v2 v2.0.0-20240904140803-b4127ecb5410
 
-	cosmossdk.io/simapp => cosmossdk.io/simapp v0.0.0-20241112091912-96a1c1c833ea
+	// cosmossdk.io/simapp => cosmossdk.io/simapp v0.0.0-20241112091912-96a1c1c833ea
 	cosmossdk.io/store => github.com/InjectiveLabs/cosmos-sdk/store v0.0.0-20240904140803-b4127ecb5410
 	cosmossdk.io/x/tx => github.com/InjectiveLabs/cosmos-sdk/x/tx v0.0.0-20240904140803-b4127ecb5410
 
