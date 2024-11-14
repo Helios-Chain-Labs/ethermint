@@ -409,7 +409,7 @@ func (suite *HandlerTestSuite) deployERC20Contract() common.Address {
 		GasTipCap:         nil,
 		Data:              append(types.ERC20Contract.Bin, ctorArgs...),
 		AccessList:        nil,
-		SkipAccountChecks: true,
+		// SkipAccountChecks: true,
 	}
 	rsp, err := k.ApplyMessage(suite.Ctx, msg, nil, true)
 	suite.Require().NoError(err)

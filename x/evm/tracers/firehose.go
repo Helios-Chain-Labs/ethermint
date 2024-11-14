@@ -29,7 +29,7 @@ import (
 	"github.com/ethereum/go-ethereum/common/math"
 	"github.com/ethereum/go-ethereum/core/tracing"
 	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
+	vm "github.com/ethereum/go-ethereum/core/vm"
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/ethereum/go-ethereum/params"
@@ -468,7 +468,7 @@ func (f *Firehose) OnSkippedBlock(event tracing.BlockEvent) {
 }
 
 func getActivePrecompilesChecker(rules params.Rules) func(addr common.Address) bool {
-	activePrecompiles := vm.DefaultActivePrecompiles(rules)
+	activePrecompiles := vm.ActivePrecompiles(rules)
 
 	activePrecompilesMap := make(map[common.Address]bool, len(activePrecompiles))
 	for _, addr := range activePrecompiles {

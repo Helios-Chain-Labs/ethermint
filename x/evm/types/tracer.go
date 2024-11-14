@@ -52,7 +52,7 @@ func NewTracer(tracer string, msg *core.Message, rules params.Rules) *tracers.Tr
 
 	switch tracer {
 	case TracerAccessList:
-		preCompiles := vm.DefaultActivePrecompiles(rules)
+		preCompiles := vm.ActivePrecompiles(rules)
 		hooks = logger.NewAccessListTracer(msg.AccessList, msg.From, *msg.To, preCompiles).Hooks()
 	case TracerJSON:
 		hooks = logger.NewJSONLogger(logCfg, os.Stderr)

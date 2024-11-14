@@ -35,7 +35,7 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
+	vm "github.com/ethereum/go-ethereum/core/vm"
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/ethereum/go-ethereum/eth/tracers"
 	"github.com/ethereum/go-ethereum/params"
@@ -75,21 +75,21 @@ func (k *Keeper) NewEVM(
 	vmConfig := k.VMConfig(ctx, cfg)
 	contracts := make(map[common.Address]vm.PrecompiledContract)
 	active := make([]common.Address, 0)
-	for addr, c := range vm.DefaultPrecompiles(cfg.Rules) {
+	for addr, c := range vm.ActivePrecompiledContracts(cfg.Rules) {
 		contracts[addr] = c
 		active = append(active, addr)
 	}
-	for _, fn := range k.customContractFns {
-		c := fn(ctx, cfg.Rules)
-		addr := c.Address()
-		contracts[addr] = c
-		active = append(active, addr)
-	}
+	// for _, fn := range k.customContractFns {
+	// 	c := fn(ctx, cfg.Rules)
+	// 	addr := c.Address()
+	// 	contracts[addr] = c
+	// 	active = append(active, addr)
+	// }
 	sort.SliceStable(active, func(i, j int) bool {
 		return bytes.Compare(active[i].Bytes(), active[j].Bytes()) < 0
 	})
 	evm := vm.NewEVM(blockCtx, txCtx, stateDB, cfg.ChainConfig, vmConfig)
-	evm.WithPrecompiles(contracts, active)
+	// evm.WithPrecompiles(contracts, active)
 	return evm
 }
 
@@ -416,7 +416,7 @@ func (k *Keeper) ApplyMessageWithConfig(
 	// Execute the preparatory steps for state transition which includes:
 	// - prepare accessList(post-berlin)
 	// - reset transient storage(eip 1153)
-	stateDB.Prepare(rules, msg.From, cfg.CoinBase, msg.To, vm.DefaultActivePrecompiles(rules), msg.AccessList)
+	stateDB.Prepare(rules, msg.From, cfg.CoinBase, msg.To, vm.ActivePrecompiles(rules), msg.AccessList)
 
 	if contractCreation {
 		// Why do we want to set the nonce in the statedb twice here?

@@ -362,7 +362,7 @@ func (k Keeper) EstimateGas(c context.Context, req *types.EthCallRequest) (*type
 			GasTipCap:         msg.GasTipCap,
 			Data:              msg.Data,
 			AccessList:        msg.AccessList,
-			SkipAccountChecks: msg.SkipAccountChecks,
+			// SkipAccountChecks: msg.SkipAccountChecks,
 		}
 
 		// pass false to not commit StateDB
